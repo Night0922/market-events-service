@@ -6,8 +6,8 @@ class Settings(BaseSettings):
     app_version: str = "0.1.0"
     debug: bool = True
 
-    database_url: str = "postgresql+asyncpg://postgres:postgres@db:5432/market_events"
-    redis_url: str = "redis://redis:6379/0"
+    database_url: str = "postgresql+asyncpg://postgres:postgres@localhost:5432/postgres"
+    redis_url: str = "redis://localhost:6379/0"
 
     provider_a_api_key: str = "test-key"
     provider_b_api_key: str = "test-key"
